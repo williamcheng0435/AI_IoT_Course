@@ -14,6 +14,8 @@ $ pip3 install opencv-python
 
 //install jupyter notebook
 $ pip3 install jupyter
+$ python -m ipykernel install --user --name=tfod
+$ jupyer-notebook
 
 //install labelimg
 $ git clone https://github.com/tzutalin/labelImg
