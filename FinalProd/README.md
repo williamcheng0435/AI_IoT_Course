@@ -1,4 +1,4 @@
-# TensorFlow Lite Python object detection example with Raspberry Pi
+# DetectTensorFlow Lite Python object detection hosted by Flask example with Raspberry Pi
 
 The project's detection algorithm originated from [TensorFlow Lite](https://tensorflow.org/lite) with Python on
 a Raspberry Pi to perform real-time object detection using images streamed from
