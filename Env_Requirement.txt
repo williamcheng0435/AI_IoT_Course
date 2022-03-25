@@ -26,5 +26,5 @@ $ python3 labelImg.py
 
 //TFOD official
 $ sudo apt-get update
-$ pip install tflite-runtime
-$ pip install tflite-support
+$ pip3 install tflite-runtime
+$ pip3 install tflite-support
