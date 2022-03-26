@@ -11,23 +11,34 @@ import time
 labels = ['shape']
 IMAGES_PATH = os.path.join('shape')
 number_imgs = 4
-cap = cv2.VideoCapture(0)
-# Check if the webcam is opened correctly
-if not cap.isOpened():
-    raise IOError("Cannot open webcam")
+
     
 for label in labels:
-    print('Collecting images for {}'.format(label))
-    time.sleep(5)
     for imgnum in range(number_imgs):
-        print('Collecting image {}'.format(imgnum))
-        ret, frame = cap.read()
+        
+        print('Collecting images for {}, no {}'.format(label, imgnum))
+        time.sleep(1)
+        print('3')
+        time.sleep(1)
+        print('2')
+        time.sleep(1)
+        print('1')
+        time.sleep(1)
+
+        cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+        
+        ret, frame = cap.read()           
+        #cv2.imshow('frame', frame)
         imgname = os.path.join(IMAGES_PATH,label+'.'+'{}.jpg'.format(str(uuid.uuid1())))
         cv2.imwrite(imgname, frame)
-        cv2.imshow('frame', frame)
-        time.sleep(4)
+        time.sleep(5)
+        cv2.destroyAllWindows()
+        cap.release()
+        
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
+                break
+
+                
 cap.release()
 cv2.destroyAllWindows()
