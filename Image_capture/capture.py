@@ -25,7 +25,7 @@ for label in labels:
         print('1')
         time.sleep(1)
 
-        cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+        cap = cv2.VideoCapture(0)
         
         ret, frame = cap.read()           
         #cv2.imshow('frame', frame)
