@@ -34,11 +34,9 @@ for label in labels:
         time.sleep(5)
         cv2.destroyAllWindows()
         cap.release()
-        
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
 
-                
 cap.release()
 cv2.destroyAllWindows()
