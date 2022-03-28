@@ -1,1 +1,0 @@
-pip install tflite_support_nightly
