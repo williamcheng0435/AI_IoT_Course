@@ -24,6 +24,9 @@ $ cd labelImg
 $ make qt5py3
 $ python3 labelImg.py
 
+//install Metadata_Changer
+$ pip install tflite_support_nightly
+
 //TFOD official
 $ sudo apt-get update
 $ pip3 install tflite-runtime
