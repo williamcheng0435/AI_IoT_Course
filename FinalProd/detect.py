@@ -55,8 +55,8 @@ def run(model: str, camera_id: int, width: int, height: int, num_threads: int,
   # Initialize the object detection model
   options = ObjectDetectorOptions(
       num_threads=num_threads,
-      score_threshold=0.3,
-      max_results=3,
+      score_threshold=0.7,
+      max_results=6,
       enable_edgetpu=enable_edgetpu)
   detector = ObjectDetector(model_path=model, options=options)
 

@@ -63,8 +63,8 @@ def gen_frames(model: str, camera_id: int, width: int, height: int, num_threads:
     # Initialize the object detection model
     options = ObjectDetectorOptions(
         num_threads=num_threads,
-        score_threshold=0.3,
-        max_results=3,
+        score_threshold=0.7,
+        max_results=6,
         enable_edgetpu=enable_edgetpu)
     detector = ObjectDetector(model_path=model, options=options)
 
@@ -124,4 +124,4 @@ if __name__ == "__main__":
     #hosting is making it externally visible
     #app.run(host= '192.168.0.101', port=5000, debug=True)
     #debug = true has bug
-    app.run(host= '192.168.0.104', port=5000, debug=False)
+    app.run(host= '192.168.0.106', port=5000, debug=False)
